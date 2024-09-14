@@ -2,6 +2,10 @@
 
 Bu proje, **Spring Boot** ve **Thymeleaf** kullanarak basit bir satış kayıtları yönetim sistemi geliştirmeyi amaçlamaktadır. Proje, kullanıcıların çeşitli ürünlerin gelir, maliyet ve kârlarını tablo halinde görüntülemesine olanak sağlar. Kâr değerine göre satırların renklerini dinamik olarak değiştiren bir arayüz sunar (kâr pozitifse yeşil, negatifse kırmızı).
 
+
+<img width="1016" alt="Screenshot 2024-09-15 at 00 41 59" src="https://github.com/user-attachments/assets/6a7b6798-173e-4dfb-b51c-e39f51873981">
+
+
 ---
 
 ## Projede Öğrendiklerim ve Üzerinde Çalıştıklarım
