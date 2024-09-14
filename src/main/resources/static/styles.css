@@ -1,0 +1,105 @@
+/* Genel stil ayarları */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Konteyner yapısı */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Başlık */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.2rem;
+    color: #444;
+}
+
+/* Tablo stili */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+thead {
+    background-color: #2c3e50;
+    color: white;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f8f8f8;
+}
+
+/* Pozitif ve negatif satırlar için renklendirme */
+.positive {
+    background-color: #e8f5e9 !important; /* Pozitif kârlar için yeşil */
+    color: #2c3e50; /* Yazı rengini koyu yapalım */
+}
+
+.negative {
+    background-color: #ffebee !important; /* Negatif kârlar için kırmızı */
+    color: #c0392b; /* Yazı rengini kırmızıya uygun yapalım */
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Responsive tasarım */
+@media (max-width: 768px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+        width: 100%;
+    }
+
+    thead {
+        display: none;
+    }
+
+    tbody tr {
+        margin-bottom: 10px;
+        display: block;
+    }
+
+    tbody tr td {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    tbody tr td::before {
+        content: attr(data-label);
+        flex: 1;
+        font-weight: bold;
+        color: #333;
+    }
+}
